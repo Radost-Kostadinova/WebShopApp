@@ -5,7 +5,7 @@ using WebShopAppMVC.Infrastructure.Data.Domain;
 
 namespace WebShopAppMVC.Infrastructure.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -14,7 +14,7 @@ namespace WebShopAppMVC.Infrastructure.Data
 
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Category> Categories { get; set; }
-        public DbSet<Order> Oders { get; set; }
+        public DbSet<Order> Orders { get; set; }
         public DbSet<Product> Products{ get; set; }
 
     }
