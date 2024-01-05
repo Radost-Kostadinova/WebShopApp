@@ -60,7 +60,7 @@ namespace WebShopAppMVC.Infrastructure.Data.Infrastructure
                 user.LastName = "admin";
                 user.UserName = "admin";
                 user.Email = "admin@admin.com";
-                user.Address = "admin adress";
+                user.Address = "admin address";
                 user.PhoneNumber = "0888888888";
 
 
